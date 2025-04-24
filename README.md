@@ -6,10 +6,9 @@ I'm a full-stack developer and security researcher who loves digging into intern
 
 ## ⚙️ What I do
 - Think in terms of architecture and edge cases
-- Identify and report security vulnerabilities in developer platforms (e.g., XXE in Atlassian Forge)
-- Build and optimize developer tools
 - Explore platform internals (like Atlassian Forge)
-- Research security vulnerabilities in modern platforms
+- Build and optimize developer tools
+- Research and report security vulnerabilities in developer platforms
 
 ---
 
@@ -18,8 +17,6 @@ I'm a full-stack developer and security researcher who loves digging into intern
 [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=vzakharchenko&show_icons=true&theme=default&hide=issues&hide_rank=true)](https://github.com/vzakharchenko)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=vzakharchenko&layout=compact&theme=default&exclude_repo=smartthings-phevctl,remote-ctrl-gsm)](https://github.com/vzakharchenko)
-
----
 
 ---
 
