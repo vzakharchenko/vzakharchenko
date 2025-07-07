@@ -25,9 +25,7 @@ I'm a full-stack developer and security researcher who loves digging into intern
 📘 **Published on the Atlassian Developer Blog**  
 **[Optimizing Forge SQL on a 600K+ Database with TiDB EXPLAIN](https://www.atlassian.com/blog/developer/optimizing-forge-sql-on-a-600k-database-with-tidb-explain)**  
 A deep dive into query performance, execution plans, and how to work with large datasets in Forge SQL — based on real experiments and analysis.
-
-🚧 Coming next:  
-**How to Prevent Data Loss in Forge SQL: Optimistic Locking in Action** (in progress)
+**[How to Prevent Data Loss in Forge SQL: Optimistic Locking in Action](https://www.atlassian.com/blog/developer/reliable-data-storage-using-optimistic-locking-in-forge-sql)**  how to use optimistic locking in Forge SQL to prevent data loss with concurrent updates.
 
 ---
 
