@@ -1,7 +1,16 @@
 # Hi, I'm Vasyl 👋
 
-I'm a full-stack developer and security researcher who loves digging into internals, simplifying complex systems, and building tools that help developers move faster.
+I'm a full-stack developer, security researcher, and the **1st Place Winner of Atlassian Codegeist 2025** who loves digging into internals, simplifying complex systems, and building tools that help developers move faster.
 
+---
+
+## 🏆 Recognition & Speaking
+
+* **🏆 1st Place Winner, Atlassian Codegeist 2025**: Won the top prize with **[Secure Notes for Jira](https://github.com/vzakharchenko/Forge-Secure-Notes-for-Jira)**, an enterprise-grade Zero Trust application. Built a custom Drizzle-based ORM for Forge SQL to handle complex audit logs and strict B2B security requirements. 
+  ➡️ **[View winning submission on Devpost](https://devpost.com/software/secure-notes-for-jira-coegvb)**
+* **🎤 Speaker, [Atlassian Atlas Camp 2026](https://events.atlassian.com/atlascamp26-amsterdam/speaker/2052067/vasyl-zakharchenko)**: Presented *"Making Forge SQL Observable"*. Shared deep technical insights on handling Out-of-Memory (OOM) and Timeout errors in multi-tenant enterprise environments, analyzing TiDB execution plans, and optimizing complex queries for large-scale customers.
+  * 🌍 **[Atlassian Community Event (ACE) Recap](https://ace.atlassian.com/events/details/atlassian-west-midlands-presents-atlas-camp-amsterdam-2026-recap/)**: Invited to present a condensed version of this talk to the global Atlassian community. 
+  * ▶️ **[Watch my presentation on YouTube](https://youtu.be/Tw5_Jrrr3N0?t=2297)**
 ---
 
 ## ⚙️ What I do
@@ -18,7 +27,6 @@ I'm a full-stack developer and security researcher who loves digging into intern
 [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=vzakharchenko\&show_icons=true\&theme=default\&hide=issues\&hide_rank=true)](https://github.com/vzakharchenko)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=vzakharchenko\&layout=compact\&theme=default\&exclude_repo=smartthings-phevctl,remote-ctrl-gsm)](https://github.com/vzakharchenko)
 
----
 
 ## 🧩 Architectural Work
 
