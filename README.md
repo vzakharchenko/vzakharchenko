@@ -1,7 +1,6 @@
 # Hi, I'm Vasyl 👋
 
-I'm a full-stack developer, security researcher, and the **1st Place Winner of Atlassian Codegeist 2025** who loves digging into internals, simplifying complex systems, and building tools that help developers move faster.
-
+I'm a full-stack engineer and security researcher focused on platform architecture, developer tooling, and multi-tenant systems. Speaker and 1st Place Winner of Atlassian Codegeist 2025.
 ---
 
 ## 🏆 Recognition & Speaking
@@ -15,10 +14,10 @@ I'm a full-stack developer, security researcher, and the **1st Place Winner of A
 
 ## ⚙️ What I do
 
-* Think in terms of architecture and edge cases
-* Explore platform internals (like Atlassian Forge)
-* Build and optimize developer tools
-* Research and report security vulnerabilities in developer platforms
+* Design systems with a focus on trust boundaries and edge cases
+* Explore platform internals (e.g., Atlassian Forge)
+* Build developer tooling for complex distributed systems
+* Research and report security issues in multi-tenant platforms
 
 ---
 
@@ -27,8 +26,75 @@ I'm a full-stack developer, security researcher, and the **1st Place Winner of A
 [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=vzakharchenko\&show_icons=true\&theme=default\&hide=issues\&hide_rank=true)](https://github.com/vzakharchenko)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=vzakharchenko\&layout=compact\&theme=default\&exclude_repo=smartthings-phevctl,remote-ctrl-gsm)](https://github.com/vzakharchenko)
 
+## 🚀 Core Project
+
+### 🔹 forge-sql-orm — Enterprise ORM for Atlassian Forge SQL
+
+[forge-sql-orm](https://github.com/forge-sql-orm/forge-sql-orm) is a Drizzle-based ORM built for reliable, production-grade Atlassian Forge apps.
+It addresses a key gap in the Forge ecosystem where no native ORM layer exists.
+
+Designed to handle complex Forge SQL patterns such as:
+
+- caching
+- optimistic locking
+- query observability and diagnostics
+- schema generation and migrations
+- safe query construction for multi-tenant environments
+
+The project is actively used in the Forge ecosystem and has become one of the most visible community solutions for teams building serious apps on Forge SQL.
+
+📦 npm: ~400–500 installs/week (peaks up to 1000+) with real production usage 
+➡️ **GitHub:** https://github.com/forge-sql-orm/forge-sql-orm
+
+### 🔹 Keycloak Radius Plugin — Embedded RADIUS Server for SSO
+
+An advanced extension for [Keycloak](https://www.keycloak.org/) that embeds a fully functional **RADIUS server directly into the authentication flow**.
+
+- Enables RADIUS authentication using Keycloak identities (OIDC, LDAP, Kerberos)
+- Supports **OTP (TOTP/HOTP)**, **WebAuthn (FIDO2)**, and multi-factor authentication
+- Includes **RadSec (RADIUS over TLS)** and RADIUS proxy capabilities
+- Designed for **multi-tenant environments** with dynamic attribute mapping
+- Integrates with network systems (Mikrotik, Cisco, VPNs, hotspot authentication)
+
+➡️ https://github.com/vzakharchenko/keycloak-radius-plugin
 
 ## 🧩 Architectural Work
+
+### 🔹 Forge SQL Observability — Safe Query Profiling Pattern
+
+A practical observability pattern for analyzing SQL performance inside Atlassian Forge apps without breaking platform constraints.
+
+The approach focuses on **deterministic, Forge-safe diagnostics**:
+
+- Aggregating total DB execution time per invocation (`dbExecutionTime`)
+- Identifying the **slowest queries** instead of relying on non-deterministic system tables
+- Optional **EXPLAIN ANALYZE** re-execution for targeted queries
+- Safe fallback strategies when metadata is evicted in long-running functions
+- Post-mortem diagnostics for **Timeout** and **Out-of-Memory (OOM)** failures
+
+Key idea:
+Instead of relying on unstable `information_schema` windows, the pattern captures and analyzes queries **at the application layer**, making observability predictable even under strict Forge limits.
+
+This approach is implemented in **[forge-sql-orm](https://github.com/forge-sql-orm/forge-sql-orm)** and complements platform-level observability with developer-controlled diagnostics.
+
+📘 **Read the discussion:**
+➡️ https://community.developer.atlassian.com/t/practical-sql-observability-for-forge-apps-with-forge-sql-orm/97237
+### 🔹 Rovo + Forge SQL — Secure Pattern for Natural-Language Analytics
+
+A practical security pattern for connecting **Rovo** with **Forge SQL** in apps that support natural-language analytics.
+
+The approach treats AI-generated SQL as **untrusted input** and validates it through multiple independent layers before execution:
+
+- **AST pre-check** to allow only a single read-only query against the intended table
+- **EXPLAIN plan verification** to ensure the query does not touch unexpected tables
+- **Post-execution metadata validation** to confirm returned fields originate only from the allowed table
+- **Dynamic context injection** for values like `:currentUserId`, `:projectKey`, and `:issueKey`
+- **Dynamic row-level security (RLS)** for per-user access control in multi-tenant apps
+
+This pattern was later packaged into **[forge-sql-orm](https://github.com/forge-sql-orm/forge-sql-orm)** as a reusable “Guard” executor for secure Rovo → SQL integrations.
+
+📘 **Read the discussion:**
+➡️ [Rovo + Forge SQL: A Secure Pattern for Natural-Language Analytics in Forge Apps](https://community.developer.atlassian.com/t/rovo-forge-sql-a-secure-pattern-for-natural-language-analytics-in-forge-apps/97028)
 
 ### 🔹 Inbound Integration Pattern — Runs on Atlassian Safe Architecture
 
