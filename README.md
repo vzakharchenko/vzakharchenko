@@ -39,7 +39,8 @@ Designed to handle complex Forge SQL patterns such as:
 
 The project is actively used in the Forge ecosystem and has become one of the most visible community solutions for teams building serious apps on Forge SQL.
 
-📦 npm: ~400–500 installs/week (peaks up to 1000+) with real production usage  
+📦 npm: [![npm downloads](https://img.shields.io/npm/dm/forge-sql-orm)](https://www.npmjs.com/package/forge-sql-orm)
+
 ➡️ **GitHub:** https://github.com/forge-sql-orm/forge-sql-orm
 
 ### 🔹 Keycloak Radius Plugin — Embedded RADIUS Server for SSO
@@ -148,7 +149,7 @@ Supports **realm- and tenant-based routing**, **dynamic resource mapping**, and 
 ---
 
 ## 📫 Where to find me
-
+* Linkendin: [@vzakharchenko](https://www.linkedin.com/in/vasiliy-zakharchenko-22060134b/)
 * GitHub: [@vzakharchenko](https://github.com/vzakharchenko)
 * Dev.to: [vzakharchenko](https://dev.to/vzakharchenko)
 
