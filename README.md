@@ -40,10 +40,11 @@ Designed to handle complex Forge SQL patterns such as:
 - query observability and diagnostics
 - schema generation and migrations
 - safe query construction for multi-tenant environments
+- vector search and semantic retrieval patterns for AI-powered Forge apps
 
 The project is actively used in the Forge ecosystem and has become one of the most visible community solutions for teams building serious apps on Forge SQL.
 
-📦 npm: ~400–500 installs/week (peaks up to 1000+) with real production usage 
+📦 npm: ~400–500 installs/week (peaks up to 1000+) with real production usage  
 ➡️ **GitHub:** https://github.com/forge-sql-orm/forge-sql-orm
 
 ### 🔹 Keycloak Radius Plugin — Embedded RADIUS Server for SSO
@@ -136,6 +137,15 @@ Supports **realm- and tenant-based routing**, **dynamic resource mapping**, and 
   A deep dive into query performance, execution plans, and how to work with large datasets in Forge SQL — based on real experiments and analysis.
 * **[How to Prevent Data Loss in Forge SQL: Optimistic Locking in Action](https://www.atlassian.com/blog/developer/reliable-data-storage-using-optimistic-locking-in-forge-sql)**
   How to use optimistic locking in Forge SQL to prevent data loss with concurrent updates.
+  
+📘 **Community article: Local Semantic Search in Atlassian Forge**
+
+* **[AI Magic in Atlassian Forge: Local Semantic Search with Forge SQL](https://community.developer.atlassian.com/t/ai-magic-in-atlassian-forge-local-semantic-search-with-forge-sql/100163)**
+  A practical guide to building semantic search in Atlassian Forge using local embeddings, Forge SQL, and TiDB vector search — with both Custom UI (WebAssembly) and backend resolver-based embedding approaches.
+
+🧩 **Working examples:**
+* **[Frontend / client-side embeddings](https://github.com/forge-sql-orm/forge-sql-orm/tree/master/examples/forge-sql-orm-example-ai)**
+* **[Backend / resolver-side embeddings](https://github.com/forge-sql-orm/forge-sql-orm/tree/master/examples/forge-sql-orm-example-backend-ai)**
 
 📰 **More articles on Dev.to:**
 ➡️ [@vzakharchenko](https://dev.to/vzakharchenko)
