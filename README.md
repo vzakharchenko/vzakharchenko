@@ -21,11 +21,6 @@ I'm a full-stack engineer and security researcher focused on platform architectu
 
 ---
 
-## 🌱 Open Source
-
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=vzakharchenko\&show_icons=true\&theme=default\&hide=issues\&hide_rank=true)](https://github.com/vzakharchenko)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=vzakharchenko\&layout=compact\&theme=default\&exclude_repo=smartthings-phevctl,remote-ctrl-gsm)](https://github.com/vzakharchenko)
-
 ## 🚀 Core Project
 
 ### 🔹 forge-sql-orm — Enterprise ORM for Atlassian Forge SQL
