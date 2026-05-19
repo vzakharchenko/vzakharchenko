@@ -1,5 +1,4 @@
 # Hi, I'm Vasyl 👋
-![GitHub User's stars](https://img.shields.io/github/stars/vzakharchenko)
 
 I'm a full-stack engineer and security researcher focused on platform architecture, developer tooling, and multi-tenant systems. Speaker and 1st Place Winner of Atlassian Codegeist 2025.
 ---
@@ -11,6 +10,10 @@ I'm a full-stack engineer and security researcher focused on platform architectu
 * **🎤 Speaker, [Atlassian Atlas Camp 2026](https://events.atlassian.com/atlascamp26-amsterdam/speaker/2052067/vasyl-zakharchenko)**: Presented *"Making Forge SQL Observable"*. Shared deep technical insights on handling Out-of-Memory (OOM) and Timeout errors in multi-tenant enterprise environments, analyzing TiDB execution plans, and optimizing complex queries for large-scale customers.
   * 🌍 **[Atlassian Community Event (ACE) Recap](https://ace.atlassian.com/events/details/atlassian-west-midlands-presents-atlas-camp-amsterdam-2026-recap/)**: Invited to present a condensed version of this talk to the global Atlassian community. 
   * ▶️ **[Watch my presentation on YouTube](https://youtu.be/Tw5_Jrrr3N0?t=2297)**
+
+
+![GitHub User's stars](https://img.shields.io/github/stars/vzakharchenko?style=plastic&link=https%3A%2F%2Fgithub.com%2Fvzakharchenko)
+
 ---
 
 ## ⚙️ What I do
