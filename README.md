@@ -159,3 +159,8 @@ Supports **realm- and tenant-based routing**, **dynamic resource mapping**, and 
 * GitHub: [@vzakharchenko](https://github.com/vzakharchenko)
 * Dev.to: [vzakharchenko](https://dev.to/vzakharchenko)
 
+---
+
+<picture>
+  <img src="/metrics.plugin.skyline.city.svg" alt="skyline">
+</picture>
