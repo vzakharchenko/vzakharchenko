@@ -1,6 +1,10 @@
-# Hi, I'm Vasyl 👋
-
+# Hi, I'm Vasyl 👋 ![GitHub User's stars](https://img.shields.io/github/stars/vzakharchenko?style=plastic&link=https%3A%2F%2Fgithub.com%2Fvzakharchenko)
 I'm a full-stack engineer and security researcher focused on platform architecture, developer tooling, and multi-tenant systems. Speaker and 1st Place Winner of Atlassian Codegeist 2025.
+---
+<picture>
+  <img src="/github-metrics.svg" alt="Metrics">
+</picture>
+
 ---
 
 ## 🏆 Recognition & Speaking
@@ -11,7 +15,6 @@ I'm a full-stack engineer and security researcher focused on platform architectu
   * 🎬 **[Watch full presentation on YouTube](https://www.youtube.com/watch?v=EL-kbJgk12o)**
   * 🌍 Atlassian Community Event (ACE) Recap: Invited to present a condensed version of this talk to the global Atlassian community ([watch recap here](https://youtu.be/Tw5_Jrrr3N0?t=2297)).
 
-![GitHub User's stars](https://img.shields.io/github/stars/vzakharchenko?style=plastic&link=https%3A%2F%2Fgithub.com%2Fvzakharchenko)
 
 ---
 
