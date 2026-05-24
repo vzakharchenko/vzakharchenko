@@ -29,3 +29,4 @@ jobs:
           token: NOT_NEEDED
           base: ''
           plugin_skyline: yes
+          timeout: 1800000
