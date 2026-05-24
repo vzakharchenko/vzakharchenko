@@ -61,8 +61,7 @@ An advanced extension for [Keycloak](https://www.keycloak.org/) that embeds a fu
 
 ➡️ https://github.com/vzakharchenko/keycloak-radius-plugin
 
-## 🧩 Architectural Work
-
+## 🧩 Architecture Patterns & Platform Work
 ### 🔹 Connect → Forge Runtime Migration Layer (atlassian-runtime-bridge)
 
 atlassian-runtime-bridge is a Spring Boot architecture layer for migrating Atlassian Connect apps to Forge Remote and Forge Containers without rewriting the service layer.
