@@ -63,6 +63,21 @@ An advanced extension for [Keycloak](https://www.keycloak.org/) that embeds a fu
 
 ## 🧩 Architectural Work
 
+### 🔹 Connect → Forge Runtime Migration Layer (atlassian-runtime-bridge)
+
+atlassian-runtime-bridge is a Spring Boot architecture layer for migrating Atlassian Connect apps to Forge Remote and Forge Containers without rewriting the service layer.
+
+It separates product access, tenant identity, and runtime authentication behind shared adapters, allowing the same application logic to run across:
+
+- legacy Connect iframe / JWT flows
+- Forge Remote invocation context
+- Forge Containers with the egress sidecar model
+
+The project focuses on practical migration problems: moving from `clientKey` to `cloudId`, avoiding domain coupling to Connect’s `AtlassianHost` table, preserving a shared service layer, and keeping Connect, Forge Remote, and Container runtimes isolated at the configuration level.
+
+📘 **Read the discussion:**
+➡️ https://community.developer.atlassian.com/t/migrating-a-connect-spring-boot-app-to-forge-remote-and-containers-without-rewriting-your-service-layer/100846
+
 ### 🔹 Forge SQL Observability — Safe Query Profiling Pattern
 
 A practical observability pattern for analyzing SQL performance inside Atlassian Forge apps without breaking platform constraints.
@@ -79,6 +94,10 @@ Key idea:
 Instead of relying on unstable `information_schema` windows, the pattern captures and analyzes queries **at the application layer**, making observability predictable even under strict Forge limits.
 
 This approach is implemented in **[forge-sql-orm](https://github.com/forge-sql-orm/forge-sql-orm)** and complements platform-level observability with developer-controlled diagnostics.
+
+I presented this pattern at **Atlassian Atlas Camp 2026** in the talk **"Making Forge SQL Observable"**, covering practical diagnostics for slow queries, Timeout errors, and Out-of-Memory (OOM) failures in Forge SQL.
+
+🎬 **Watch the full presentation:** [YouTube](https://www.youtube.com/watch?v=EL-kbJgk12o)
 
 📘 **Read the discussion:**
 ➡️ https://community.developer.atlassian.com/t/practical-sql-observability-for-forge-apps-with-forge-sql-orm/97237
@@ -98,6 +117,20 @@ This pattern was later packaged into **[forge-sql-orm](https://github.com/forge-
 
 📘 **Read the discussion:**
 ➡️ [Rovo + Forge SQL: A Secure Pattern for Natural-Language Analytics in Forge Apps](https://community.developer.atlassian.com/t/rovo-forge-sql-a-secure-pattern-for-natural-language-analytics-in-forge-apps/97028)
+
+### 🔹 Forge-Native Semantic Search — Local Embeddings + Forge SQL Vector Search
+
+A practical architecture pattern for building semantic search and RAG-style retrieval inside Atlassian Forge while staying aligned with the **Runs on Atlassian** model.
+
+The approach uses local embeddings generated in **Forge Custom UI** or inside a Forge resolver, stores them in **Forge SQL** as TiDB `VECTOR(384)`, and performs similarity search directly with `VEC_COSINE_DISTANCE`.
+
+Key idea:
+Instead of sending content to an external AI service for retrieval, the app keeps the semantic search flow inside the Forge app and Forge SQL, making it more controlled, portable, and platform-friendly.
+
+📘 **Read the article:** https://community.developer.atlassian.com/t/ai-magic-in-atlassian-forge-local-semantic-search-with-forge-sql/97256
+
+🧩 **Working examples:** [client-side embeddings](https://github.com/forge-sql-orm/forge-sql-orm/tree/main/examples/forge-sql-orm-example-semantic-search) · [backend embeddings](https://github.com/forge-sql-orm/forge-sql-orm/tree/main/examples/forge-sql-orm-example-backend-ai)
+
 
 ### 🔹 Inbound Integration Pattern — Runs on Atlassian Safe Architecture
 
@@ -155,7 +188,7 @@ Supports **realm- and tenant-based routing**, **dynamic resource mapping**, and 
 ---
 
 ## 📫 Where to find me
-* Linkendin: [@vzakharchenko](https://www.linkedin.com/in/vasiliy-zakharchenko-22060134b/)
+* LinkendIn: [@vzakharchenko](https://www.linkedin.com/in/vasiliy-zakharchenko-22060134b/)
 * GitHub: [@vzakharchenko](https://github.com/vzakharchenko)
 * Dev.to: [vzakharchenko](https://dev.to/vzakharchenko)
 
