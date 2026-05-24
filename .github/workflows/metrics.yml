@@ -29,7 +29,7 @@ jobs:
           token: NOT_NEEDED
           base: ''
           plugin_skyline: yes
-          plugin_skyline_frames: 20
+          plugin_skyline_frames: 25
           plugin_skyline_quality: 1
           plugin_skyline_settings: |
             {
