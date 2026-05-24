@@ -101,6 +101,20 @@ I presented this pattern at **Atlassian Atlas Camp 2026** in the talk **"Making 
 
 📘 **Read the discussion:**
 ➡️ https://community.developer.atlassian.com/t/practical-sql-observability-for-forge-apps-with-forge-sql-orm/97237
+
+### 🔹 Forge-Native Semantic Search — Local Embeddings + Forge SQL Vector Search
+
+A practical architecture pattern for building semantic search and RAG-style retrieval inside Atlassian Forge while staying aligned with the **Runs on Atlassian** model.
+
+The approach uses local embeddings generated in **Forge Custom UI** or inside a Forge resolver, stores them in **Forge SQL** as TiDB `VECTOR(384)`, and performs similarity search directly with `VEC_COSINE_DISTANCE`.
+
+Key idea:
+Instead of sending content to an external AI service for retrieval, the app keeps the semantic search flow inside the Forge app and Forge SQL, making it more controlled, portable, and platform-friendly.
+
+📘 **Read the article:** https://community.developer.atlassian.com/t/ai-magic-in-atlassian-forge-local-semantic-search-with-forge-sql/97256
+
+🧩 **Working examples:** [client-side embeddings](https://github.com/forge-sql-orm/forge-sql-orm/tree/main/examples/forge-sql-orm-example-semantic-search) · [backend embeddings](https://github.com/forge-sql-orm/forge-sql-orm/tree/main/examples/forge-sql-orm-example-backend-ai)
+
 ### 🔹 Rovo + Forge SQL — Secure Pattern for Natural-Language Analytics
 
 A practical security pattern for connecting **Rovo** with **Forge SQL** in apps that support natural-language analytics.
@@ -117,20 +131,6 @@ This pattern was later packaged into **[forge-sql-orm](https://github.com/forge-
 
 📘 **Read the discussion:**
 ➡️ [Rovo + Forge SQL: A Secure Pattern for Natural-Language Analytics in Forge Apps](https://community.developer.atlassian.com/t/rovo-forge-sql-a-secure-pattern-for-natural-language-analytics-in-forge-apps/97028)
-
-### 🔹 Forge-Native Semantic Search — Local Embeddings + Forge SQL Vector Search
-
-A practical architecture pattern for building semantic search and RAG-style retrieval inside Atlassian Forge while staying aligned with the **Runs on Atlassian** model.
-
-The approach uses local embeddings generated in **Forge Custom UI** or inside a Forge resolver, stores them in **Forge SQL** as TiDB `VECTOR(384)`, and performs similarity search directly with `VEC_COSINE_DISTANCE`.
-
-Key idea:
-Instead of sending content to an external AI service for retrieval, the app keeps the semantic search flow inside the Forge app and Forge SQL, making it more controlled, portable, and platform-friendly.
-
-📘 **Read the article:** https://community.developer.atlassian.com/t/ai-magic-in-atlassian-forge-local-semantic-search-with-forge-sql/97256
-
-🧩 **Working examples:** [client-side embeddings](https://github.com/forge-sql-orm/forge-sql-orm/tree/main/examples/forge-sql-orm-example-semantic-search) · [backend embeddings](https://github.com/forge-sql-orm/forge-sql-orm/tree/main/examples/forge-sql-orm-example-backend-ai)
-
 
 ### 🔹 Inbound Integration Pattern — Runs on Atlassian Safe Architecture
 
