@@ -7,6 +7,7 @@ I'm a full-stack engineer and security researcher focused on platform architectu
 <picture>
   <img src="/trophy.svg" alt="GitHub trophies">
 </picture>
+
 ---
 
 ## 🏆 Recognition & Speaking
