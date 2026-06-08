@@ -4,7 +4,9 @@ I'm a full-stack engineer and security researcher focused on platform architectu
 <picture>
   <img src="/metrics.plugin.stargazers.graph.svg" alt="Metrics">
 </picture>
-
+<picture>
+  <img src="/trophy.svg" alt="GitHub trophies">
+</picture>
 ---
 
 ## 🏆 Recognition & Speaking
