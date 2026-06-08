@@ -22,6 +22,12 @@ jobs:
           plugin_stargazers: yes
           plugin_stargazers_charts_type: graph
           plugin_traffic: yes
+      - name: Generate trophy
+        uses: Erik-Donath/github-profile-trophy@feature/generate-svg
+        with:
+           username: vzakharchenko
+           output_path: trophy.svg
+           token: ${{ secrets.GITHUB_TOKEN }}
       - name: GitHub City
         uses: lowlighter/metrics@latest
         with:
