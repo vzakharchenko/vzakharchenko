@@ -190,7 +190,7 @@ Supports **realm- and tenant-based routing**, **dynamic resource mapping**, and 
 ---
 
 ## 📫 Where to find me
-* LinkendIn: [@vzakharchenko](https://www.linkedin.com/in/vasiliy-zakharchenko-22060134b/)
+* LinkedIn: [@vzakharchenko](https://www.linkedin.com/in/vasiliy-zakharchenko-22060134b/)
 * GitHub: [@vzakharchenko](https://github.com/vzakharchenko)
 * Dev.to: [vzakharchenko](https://dev.to/vzakharchenko)
 
